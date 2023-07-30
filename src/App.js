@@ -1,11 +1,13 @@
-import Footer from './Footer.js';
-import Header from './Header.js'
-import Main from './Main.js';
+import Footer from './components/Footer';
+import Header from './components/Header'
+import ItemListContainer from './components/ItemListContainer';
+import Main from './components/Main';
 
 function App() {
   return (
     <>
      <Header/>
+     <ItemListContainer greeting="Bienvenidos a Kira Indumentaria" />
      <Main/>
      <Footer/>
     </>

@@ -1,11 +1,11 @@
 import React from 'react'
-import Navlinks from './Navlinks'
+import NavBar from './NavBar'
 
 function Footer() {
   return ( 
     <footer> 
         <p> &copy; Copyright 2023 Kira Indumentaria </p>
-        <Navlinks/>
+        <NavBar/>
     </footer>
   )
 }

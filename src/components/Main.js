@@ -1,9 +1,13 @@
 import React from 'react'
-import remeraModalMujerRosa from './assets/remeraModalMujerRosa.png'
+import remeraModalMujerRosa from '../assets/remeraModalMujerRosa.png'
+
+
+
+
 
 function Main() {
   return (
-    <div>Main
+    <div>
     <img src={remeraModalMujerRosa} alt="" />
     </div>
   )

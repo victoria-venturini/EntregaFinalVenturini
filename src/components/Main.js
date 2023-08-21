@@ -1,33 +1,21 @@
-import { useState } from "react"
+import { Route, Routes /* , Router */ } from "react-router-dom"
 import Container from "./Container"
-import ItemCount from "./ItemCount"
-import Contador from "./Contador"
-//  import ItemListContainer from './components/ItemListContainer';
-// import ItemDetailContainer from './components/ItemDetailContainer';
+import Carrito from "./Carrito"
 
 
 function Main() {
 
-    //Estados
-    const [dark, setDark] = useState(false)
+    const dark = false
 
-    //Accion
-    const toggleDark = () => {
-        setDark(!dark)
-    }
-
-  
-    //Vista
     return (
-        <main className={dark ? "p-2 grow bg-slate-800 text-white" : "p-2 grow bg-white"}>
-            <button onClick={toggleDark}>toggle dark/light</button>
-            <Contador/>
-            <Container/> 
-            <ItemCount/>
-            {/* <ItemListContainer greeting="Bienvenidos a Kira Indumentaria" /> */}
-            {/* <ItemDetailContainer/> */}
-          
-            
+        <main className={dark ? "p-2 grow bg-slate-600 text-white" : "p-2 grow bg-white"}>
+            <Routes>
+                <Route path="/" element={<Container/>}/>
+                <Route path="/cat/:id" element={<Container/>}/>
+               {/*  <Route path="/item/:id" element={<Container/>}/> */}
+                <Route path="/carrito" element={<Carrito/>}/>
+                <Route path="*" element={<p>404</p>}/>
+            </Routes>
         </main>
     )
 }

@@ -24,6 +24,11 @@ function Contador() {
             <button className="border p-1 rounded" onClick={sumar}>sumar</button>
             <button className="border p-1 rounded" onClick={restar}>restar</button>
             <button className="border p-1 rounded" onClick={resetear}>resetear</button>
+            <div>
+                <button className='Button'> 
+                Agregar al carrito
+                </button>
+            </div>
         </main>
     )
 }

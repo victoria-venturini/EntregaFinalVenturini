@@ -19,4 +19,3 @@ function NavBar() {
 
 export default NavBar
 
-{/* <i className='material-icons'>widgets</i> */}

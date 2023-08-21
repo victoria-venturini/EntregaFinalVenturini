@@ -7,12 +7,12 @@ const productosHardcordeados = [{ "id": 1, "title": "Fjallraven - Foldsack No. 1
 
 function Container() {
 
-    //Estados : 1 (nunca mas va a pasar)
+    
     const [data, setData] = useState([])
-    const resultado = useParams() //{}
+    const resultado = useParams() 
 
 
-    //Efectos : 4 
+    
     useEffect(() => {
 
         getAllProducts()
@@ -25,7 +25,7 @@ function Container() {
         } else {
             console.log("Estoy en la ruta de productos,osea Home")
         }
-        //getProductsByCategory(x)
+      
 
     }, [resultado.id])
 

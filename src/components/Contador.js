@@ -1,10 +1,9 @@
 import { useState } from "react"
 
 function Contador() {
-    //Valores
+
     let [contador,setContador] = useState(0)
 
-    //Acciones
     const sumar = () => {
         setContador(contador + 1)
     }
@@ -17,7 +16,7 @@ function Contador() {
         setContador(0)
     }
 
-    //Vista
+ 
     return (
         <main className="p-2 grow">
             <p>Contador : {contador}</p>

@@ -6,21 +6,15 @@ function Carrito() {
 
     const [selectedCant,setSelectedCant] = useState(0)
 
-    // const onAdd = (cantidad) => {
-    //     console.log("Mi Callback onAdd")
-    //     if(){
-    //         setSelectedCant(cantidad)
-    //     }else{
-    //         setSelectedCant(cantidad + 1)
-    //     }
-    // }
+     const onAdd = (cantidad) => {
+        console.log("Mi Callback onAdd")
+           setSelectedCant(cantidad)
+     }
 
     return (
         <div>
             <p>Cantidad seleccionada desde el componente hijo : {selectedCant}</p>
-            <CarritoHijo
-                // onAdd={onAdd}
-            />
+            <CarritoHijo onAdd={onAdd} />
             <Contador/>
         </div>
     )

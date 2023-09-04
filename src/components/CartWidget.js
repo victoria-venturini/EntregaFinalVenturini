@@ -1,13 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { useContext } from "react"
+import { NavLink } from "react-router-dom"
+import { contexto } from "./miContexto"
+import { CartContext } from "./CartContext"
 
 function CartWidget() {
+
+  const valorDelContexto = useContext(CartContext)
+
   return (
-    <Link to="/carrito"> 
-      <Link to="/carrito"><i className='material-icons'>shopping_cart</i>
-        <span>3</span></Link>
-    </Link>
-   
+    <NavLink to="/carrito">
+        <i className="material-icons">shopping_cart</i>
+        <span>{valorDelContexto.totalProducts}</span>
+    </NavLink>
   )
 }
 

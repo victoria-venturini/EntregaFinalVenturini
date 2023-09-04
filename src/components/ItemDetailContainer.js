@@ -1,29 +1,26 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { getProductById } from './AsyncMock';
-import ItemDetail from './ItemDetail'
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom"
+import Contador from "./Contador"
 
-const ItemDetailContainer = () => {
-  const [product, setProduct] = useState(null)
-  const {itemId} = useParams()
 
-  useEffect(() => {
-    getProductById(itemId)
-    .then(response => {
-      setProduct(response)
-    })
-    .catch(error=>{console.error(error)
-    })
-  }, [itemId])
+const ItemDetailContainer= () => {
+
+    const params = useParams()
+
+
 
     return (
-      <div className="ItemDetailContainer">
-       <ItemDetail {...product}/>
-      </div>
+        <div>
+            <h2>Detalle</h2>
+            <img src={`https://picsum.photos/id/${params.id}/200/300`} alt="" />
+            <p>id: {params.id}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto nulla porro ullam tenetur quas a, deserunt maiores quo, minima totam rerum assumenda veritatis itaque saepe, blanditiis magni explicabo adipisci!</p>
+            <Contador IdProduct={params.id}/>
+         
+        </div>
     )
-  }
+}
 
 
 
-  export default ItemDetailContainer;
+export default ItemDetailContainer;
+

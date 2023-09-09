@@ -1,23 +1,17 @@
-import { BrowserRouter } from 'react-router-dom';
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Main from './components/Main'
-import MiCustomProvider from './components/miContexto';
-import "./db/migration"
-import { CartProvider } from './components/CartContext';
+import { BrowserRouter } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
+import Layout from "./components/Layout/Layout";
+import { ProductsProvider } from "./context/ProductsContext";
+// import "./db/migration";
 
 function App() {
-
   return (
     <BrowserRouter>
-    <CartProvider>
-    <Header />
-        <Main />
-        <Footer />
-    </CartProvider>
-      {/* //<MiCustomProvider> */}
-        
-     {/* // </MiCustomProvider> */}
+      <ProductsProvider>
+        <CartProvider>
+          <Layout />
+        </CartProvider>
+      </ProductsProvider>
     </BrowserRouter>
   );
 }

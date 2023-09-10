@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import CartContainer from "../../../../screens/Cart/CartContainer";
 import ProductsItems from "../../../../screens/Products/ProductsItems/ProductsItems";
 import ProductsContainer from "../../../../screens/Products/ProductsList/ProductsContainer";
-
+import ProductsContainerClothing from "../../../../screens/Products/ProductsList/ProductsContainerClothing";
 function Main() {
   const dark = false;
 
@@ -14,10 +14,9 @@ function Main() {
     >
       <Routes>
         <Route path="/" element={<ProductsContainer />} />
-        <Route path="/cat/:id" element={<ProductsContainer />} />
+        <Route path="/cat/:catId" element={<ProductsContainerClothing/>}/>
         <Route path="/item/:id" element={<ProductsItems />} />
         <Route path="/carrito" element={<CartContainer />} />
-        <Route path="*" element={<p>404</p>} />
       </Routes>
     </main>
   );

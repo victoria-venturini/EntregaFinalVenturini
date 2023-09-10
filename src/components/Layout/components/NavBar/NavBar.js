@@ -5,10 +5,9 @@ import CartWidget from "../CartWidget/CartWidget";
 function NavBar() {
   return (
     <nav className="flex gap-24">
-      <Link to="/cat/1">Categoria 1</Link>
-      <Link to="/cat/2">Categoria 2</Link>
-      <Link to="/ubicacion">Ubicacion</Link>
-      <Link to="/contacto">Contacto</Link>
+      <Link to="/cat/clothing">Ropa</Link>
+      <Link to="/cat/electronics">Electronica</Link>
+      <Link to="/cat/jewelery">Joyas</Link>
       <CartWidget />
     </nav>
   );

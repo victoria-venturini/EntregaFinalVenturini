@@ -7,7 +7,6 @@ function CartContainer() {
 
   return (
     <div>
-      <p>Cantidad total de productos : {totalProducts}</p>
       <CarritoHijo />
     </div>
   );

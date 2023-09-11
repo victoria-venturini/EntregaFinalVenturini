@@ -32,13 +32,11 @@ function ProductsContainerClothing() {
                 
                 const product = doc.data()
                 product.id = doc.id
-                console.log(product)
                 return product 
                 })
                 setData(aux)
             })
         .catch((error)=>{
-            console.log("error")
         })
 
 
@@ -46,22 +44,11 @@ function ProductsContainerClothing() {
         .then(res=>{
             setData(res)
         })
-
-        if (resultado.id) {
-            console.log("Estoy en la ruta de categorias" + resultado.id)
-        } else {
-            console.log("Estoy en la ruta de productos,osea Home")
-        }
-      
-
     }, [resultado.id])
 
 
     const getAllProducts = () => {
         const pedido = new Promise((res, rej) => {
-            setTimeout(() => {
-                // res(productosHardcordeados)
-            }, 2000)
         })
 
         return pedido

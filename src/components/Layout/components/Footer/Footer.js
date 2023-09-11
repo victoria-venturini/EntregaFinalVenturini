@@ -6,7 +6,7 @@ function Footer() {
       id="footer"
       className="footer flex justify-between py-4 px-2 bg-rose-200 text-slate-600"
     >
-      <p> &copy; Copyright 2023 Kira Indumentaria </p>
+      <p> &copy; Copyright 2023 Kira Online Store </p>
     </footer>
   );
 }

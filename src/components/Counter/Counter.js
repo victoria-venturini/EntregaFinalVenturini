@@ -1,17 +1,17 @@
 import { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Counter(props) {
   const { product } = props;
   let [contador, setContador] = useState(0);
   const { cart, addProd } = useContext(CartContext);
-
-  console.log(cart);
+  const navigate = useNavigate()
 
   const sumar = () => setContador(contador + 1);
   const restar = () => setContador(contador - 1);
   const resetear = () => setContador(0);
-  const agregar = () => addProd(product, contador);
+  const agregar = () => {addProd(product, contador); navigate("/carrito")}
 
   return (
     <main className="p-2 grow">

@@ -55,12 +55,9 @@ const Checkout = () => {
 
                 setOrderId (orderAdded.id)
                 clearCart()
-            } else {
-                console.error("Producto fuera de stcok");
-            }
+            } 
 
         } catch (error) {
-            console.log(error);
         } finally {
             setLoading(false)
         }

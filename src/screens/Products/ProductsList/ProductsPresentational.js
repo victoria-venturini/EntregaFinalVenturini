@@ -10,7 +10,7 @@ function ProductsPresentational(props) {
           return (
             <article
               key={i}
-              className="card shadow-md p-4 rounded-md duration-300 transition hover:scale-110"
+              className="card shadow-lg shadow-rose-300 p-4 rounded-md duration-300 transition hover:scale-110"
             >
               <h2 className="overflow-hidden text-ellipsis truncate mb-4 font-semibold text-md text-slate-600">
                 {item.title}

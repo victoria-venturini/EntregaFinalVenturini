@@ -30,7 +30,6 @@ function ProductsContainer() {
         setAllProducts(products);
       } catch (error) {
         setError(error.message);
-        console.error("Error fetching products: ", error);
       }
     };
 

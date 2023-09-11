@@ -1,43 +1,46 @@
-TECNOLOGÍAS UTILIZADAS
-✅ Para la maquetación:
-ReactJs
-Javascript
+# Kira Online Store
 
-✅ Para el diseño:
-Tailwind
+## Tecnologias y herramientas utilizadas:
+✅Javascript
+✅React: "^18.2.0",
+✅NodeJs
+✅npm
+✅Tailwind
+✅Firebase
 
-✅ Para la instalación:
-NodeJs
-npm
-
-✅ Base de datos:
-Firebase
-
-FUNCIONALIDADES
-Ver una lista de productos disponibles.
-Filtrar productos por categoría.
-Agregar productos al carrito de compras.
-Ver detalle del producto.
-Ver el carrito de compras.
-Vaciar el carrito.
-Realizar una orden de compra.
-Finalizar compra obteniendo un id único para cada orden.
+## Funcionalidades de la aplicacion:
+✅Visualizar un listado de productos disponibles con sus nombres, imagenes y precios correspondientes. 
+✅Filtrar productos por categoría.
+✅Ingresar al detalle de cada producto con su imagen, precio y descripcion.
+✅Seleccionar la cantidad deseada por cada producto.
+✅Agregar productos al carrito de compras.
+✅Visualizar el carrito de compras con un listado de cada producto seleccionado. Cada uno con su titulo, imagen y ✅precio. 
+✅Calcular la cantidad total de productos y precio final en el carrito.
+✅Vaciar el carrito.
+✅Realizar una orden de compra.
+✅Confirmar la orden obteniendo un id único para cada compra.
 
 
-INSTALACIÓN
-Para clonar el proyecto y tenerlo en tu pc local:
-
-  gh repo clone victoria-venturini/EntregaFinalVenturini
+## * Instalacion de apicacion Kira Online Store:
+1- Para clonar el proyecto y tenerlo en tu pc local:
+   gh repo clone victoria-venturini/EntregaFinalVenturini
   
-ir a la carpeta de tu proyecto
+2- Abrir terminal de comandos e ir a la carpeta "miproyecto":
+   cd miproyecto
 
-  cd my-project
-instalar las dependencias
+3- Instalar las dependencias:
+   npm install
 
-  npm install
-iniciar en localhost
+4- Inicializar la aplicacion en el local host:
+   npm start
 
-  npm start
-  
-SOPORTE
-para obtener ayuda, enviar un mail a vventuriniisp@gmail.com
+* Se Dejan las piezas de:
+  -migration.js: para la creacion de la base de datos 
+  -seedData.json: para la carga de datos iniciales 
+
+
+* Para obtener ayuda, enviar un mail a vicky.vent333@gmail.com
+  La informacion y los mails del formulario llegaran a ese mismo correo
+
+## Navegabilidad del sitio:
+  [link]()

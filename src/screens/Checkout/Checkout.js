@@ -76,7 +76,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <h3>Checkout</h3>
+            <h3 className="bg-pink-300 w-32 h-8 rounded border-2 border-slate-500">Checkout</h3>
             <CheckoutForm onConfirm={createOrder}/>
         </div>
     )

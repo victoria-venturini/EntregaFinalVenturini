@@ -19,9 +19,9 @@ Filtrar productos por categoría.
 Agregar productos al carrito de compras.
 Ver detalle del producto.
 Ver el carrito de compras.
-Eliminar productos del carrito.
+Vaciar el carrito.
 Realizar una orden de compra.
-Finalizar compra obteniendo un id único para cada orden
+Finalizar compra obteniendo un id único para cada orden.
 
 
 INSTALACIÓN

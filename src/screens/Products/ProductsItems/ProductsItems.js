@@ -11,14 +11,13 @@ const ProductsItems = () => {
   const product = getProductById(params.id);
 
   return (
-    <div>
-      <h2>Detalle</h2>
+    <div className="flex"> 
       <img src={product.image} alt="" style={{ height: "10%", width: "10%" }} />
-      <p>id: {product.id}</p>
-      <p>{product.description}</p>
+      <p className="m-auto bg-red-50 shadow-lg  shadow-indigo-500/50 h-8 rounded border-indigo-500/50 p-20 font-semibold text-md text-slate-600">{product.description}</p>
       <Contador product={product} />
     </div>
   );
 };
+
 
 export default ProductsItems;

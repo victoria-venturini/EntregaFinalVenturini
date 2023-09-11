@@ -12,24 +12,23 @@ function CarritoHijo(props) {
     <div>
       {cart.map((product) => (
         <div key={product.id}>
-          <p>{product.title}</p>
+          <p className="shadow-lg shadow-rose-200/50 w-66 h-8 rounded border-2 border-rose-200/50">{product.title}</p>
           <img
             src={product.image}
             alt=""
             style={{ height: "10%", width: "10%" }}
           />
-          <p>{product.price}</p>
-          <p>{product.quantity}</p>
+          <p className="bg-rose-200/50 w-16 h-8 rounded border-2">${product.price}</p>
         </div>
       ))}
 
-      <p> Cantidad de productos: {totalProducts}</p>
-      <p> Precio total: {total}</p>
+      <p className="shadow-lg shadow-rose-200/50 w-48 h-8 rounded border-2 border-rose-200/50"> Cantidad de productos: {totalProducts}</p>
+      <p className="shadow-lg shadow-rose-200/50 w-66 h-8 rounded border-2 border-rose-200/50"> Precio total: {total}</p>
      
 
-      <button onClick={()=> clearCart()} className="Button">Vaciar Carrito</button>
+      <button onClick={()=> clearCart()} className="bg-rose-200 shadow-lg shadow-indigo-500/50 w-28 h-8 rounded border-2 border-indigo-500/50">Vaciar Carrito</button>
       
-      <Link to = '/checkout'> <button>Checkout</button> </Link>
+      <Link to = '/checkout'> <button className="bg-rose-200 shadow-lg shadow-indigo-500/50 w-28 h-8 rounded border-2 border-indigo-500/50">Checkout</button> </Link>
     </div>
   );
 }

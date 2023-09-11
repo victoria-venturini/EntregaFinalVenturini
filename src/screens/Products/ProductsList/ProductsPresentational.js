@@ -13,14 +13,14 @@ function ProductsPresentational(props) {
               className="card shadow-md p-4 rounded-md duration-300 transition hover:scale-110"
             >
               <h2 className="overflow-hidden text-ellipsis truncate mb-4 font-semibold text-md text-slate-600">
-                ${item.price} - {item.title}
+                {item.title}
               </h2>
               <img
                 src={item.image}
                 alt={item.title}
                 className="h-[200px] w-full object-contain"
               />
-              <Link to={`/item/${item.id}`} className=" w-56 h-16 flex m-auto text-center"></Link>
+              <Link to={`/item/${item.id}`} className=" w-56 h-16 flex m-auto text-center font-semibold text-md text-slate-600">${item.price}</Link>
             </article>
           );
         })

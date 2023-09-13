@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f969b9ff.css",
+    "main.js": "/static/js/main.bfe81de0.js",
+    "static/media/KiraLogo.webp": "/static/media/KiraLogo.34c51eb5acae7d2ba1d0.webp",
+    "index.html": "/index.html",
+    "main.f969b9ff.css.map": "/static/css/main.f969b9ff.css.map",
+    "main.bfe81de0.js.map": "/static/js/main.bfe81de0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f969b9ff.css",
+    "static/js/main.bfe81de0.js"
+  ]
+}

@@ -57,3 +57,7 @@ para obtener ayuda, enviar un mail a vventuriniisp@gmail.com
 
 # [link](https://drive.google.com/file/d/1Xv1nM1WsgyCpJ0rzA4gMb7rUUO3faaLE/view?usp=sharing)
 
+
+## Deploy en Vercel, link de dominio:
+
+# [link](https://kira-online-store.vercel.app/)

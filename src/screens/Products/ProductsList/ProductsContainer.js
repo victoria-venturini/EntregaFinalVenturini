@@ -14,13 +14,7 @@ function ProductsContainer() {
     const fetchProducts = async () => {
       try {
         const productsCollection = collection(db, "products");
-
-        // const requestFilter = query (ProductsContext, 
-        //   where("products.category", "==", "clothing")
-        //   )
-        // const request = getDocs(requestFilter)
-
-
+        
         const productsSnapshot = await getDocs(productsCollection);
           const products = productsSnapshot.docs.map((doc) => {
           const product = doc.data();

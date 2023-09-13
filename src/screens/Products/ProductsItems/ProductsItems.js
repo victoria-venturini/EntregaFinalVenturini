@@ -13,7 +13,11 @@ const ProductsItems = () => {
   return (
     <div className="flex"> 
       <img src={product.image} alt="" style={{ height: "10%", width: "10%" }} />
-      <p className="m-auto bg-red-50 shadow-lg  shadow-indigo-500/50 h-8 rounded border-indigo-500/50 p-20 font-semibold text-md text-slate-600">{product.description}</p>
+      <p>
+      <p className='shadow-lg shadow-rose-400/50 p-3 w-auto h-auto text-slate-800 font-bold  uppercase rounded-lg'>{product.title}</p>
+      <p className="m-auto bg-red-50 shadow-lg  shadow-indigo-500/50 h-auto rounded shadow-rose-400/50 p-20 font-semibold text-md text-slate-600">{product.description}</p>
+      </p>
+      
       <Contador product={product} />
     </div>
   );

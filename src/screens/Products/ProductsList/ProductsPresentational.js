@@ -20,7 +20,7 @@ function ProductsPresentational(props) {
                 alt={item.title}
                 className="h-[200px] w-full object-contain"
               />
-              <Link to={`/item/${item.id}`} className=" w-56 h-16 flex m-auto text-center font-semibold text-md text-slate-600">${item.price}</Link>
+              <Link to={`/item/${item.id}`} className=" w-auto h-16 flex m-auto text-center font-semibold text-md text-slate-600">${item.price}</Link>
             </article>
           );
         })

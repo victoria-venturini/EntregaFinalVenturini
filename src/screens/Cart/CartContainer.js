@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import CarritoHijo from "./components/CarritoHijo";
 import { CartContext } from "../../context/CartContext";
+import CheckoutForm from "../Checkout/CheckoutForm";
+
 
 function CartContainer() {
   const { totalProducts } = useContext(CartContext);
@@ -8,6 +10,7 @@ function CartContainer() {
   return (
     <div>
       <CarritoHijo />
+      <CheckoutForm/>
     </div>
   );
 }

@@ -15,17 +15,20 @@ function Counter(props) {
 
   return (
     <main className="p-2 grow">
-      
-      <button className="bg-rose-200 shadow-lg shadow-indigo-500/50 w-28 h-8 rounded border-2 border-indigo-500/50" onClick={sumar}>
+      <div>
+      <button className='shadow-lg shadow-rose-400/50 p-3  w-auto mx-64 text-slate-800 font-semibold  uppercase rounded-lg' onClick={sumar}>
         sumar
       </button>
-      <button className="bg-rose-200 shadow-lg shadow-indigo-500/50 w-28 h-8 rounded border-2 border-indigo-500/50"onClick={restar}>
+      <button className='shadow-lg shadow-rose-400/50 p-3 w-auto mx-64 text-slate-800 font-semibold  uppercase rounded-lg'onClick={restar}>
         restar
       </button>
-      <button className="bg-rose-200 shadow-lg shadow-indigo-500/50 w-44 h-8 rounded border-2 border-indigo-500/50" onClick={agregar}>
+      <p className='shadow-lg shadow-rose-400/50 p-3 w-auto mx-64 text-slate-800 font-semibold  uppercase rounded-lg'>Cantidad:{contador}</p>
+      <button className='shadow-lg shadow-rose-400/50 p-3  w-auto mx-64 text-slate-800 font-semibold  uppercase rounded-lg' onClick={agregar}>
         Agregar al carrito
       </button>
-      <p className="bg-red-50 shadow-lg  shadow-indigo-500/50 w-48 h-8 rounded border-indigo-500/50 font-semibold text-md text-slate-600">Cantidad : {contador}</p>
+      </div>
+      
+     
     </main>
   );
 }
